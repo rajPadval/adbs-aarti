@@ -28,19 +28,27 @@ class SearchScreen extends StatefulWidget {
 }
 
 class _SearchScreenState extends State<SearchScreen> {
-  SpeechToText _speechToText = SpeechToText();
+  final SpeechToText _speechToText = SpeechToText();
   bool _speechEnabled = false;
   bool _isListening = false;
   String _lastWords = '';
+  final TextEditingController _textEditingController = TextEditingController();
 
   // List to hold loaded articles
   List<Article> articles = [];
+  List<Article> searchResults = []; // List for search results
 
   @override
   void initState() {
     super.initState();
     _requestPermissions();
     _loadArticles();
+  }
+
+  @override
+  void dispose() {
+    _textEditingController.dispose();
+    super.dispose();
   }
 
   Future<void> _requestPermissions() async {
@@ -100,7 +108,8 @@ class _SearchScreenState extends State<SearchScreen> {
 
   /// Start speech recognition session
   void _startListening() async {
-    await _speechToText.listen(onResult: _onSpeechResult);
+    await _speechToText.listen(
+        onResult: _onSpeechResult, listenFor: Duration(seconds: 10));
     setState(() {
       _isListening = true;
     });
@@ -121,70 +130,125 @@ class _SearchScreenState extends State<SearchScreen> {
     });
 
     // Perform search based on recognized words
-    _searchArticles(_lastWords.toLowerCase());
+    _performSearch(_lastWords.toLowerCase());
   }
 
-  /// Search articles for a given query
-  void _searchArticles(String query) {
-    List<Article> searchResults = [];
+  /// Perform search based on query
+  void _performSearch(String query) {
+    List<Article> results = [];
 
-    // Search through loaded articles for titles matching the query
+    // Filter articles based on query
     for (var article in articles) {
       if (article.title.toLowerCase().contains(query)) {
-        searchResults.add(article);
+        results.add(article);
       }
     }
 
-    // Navigate to search results screen with searchResults
-    Navigator.push(
-      context,
-      MaterialPageRoute(
-        builder: (context) => SearchResultsScreen(searchResults: searchResults),
-      ),
-    );
+    // Update search results
+    setState(() {
+      searchResults = results;
+    });
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Search'),
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Container(
-              padding: EdgeInsets.all(16),
-              child: Text(
-                'Recognized words:',
-                style: TextStyle(fontSize: 20.0),
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: <Widget>[
+          Container(
+            decoration: const BoxDecoration(
+              gradient: LinearGradient(
+                colors: [Colors.pinkAccent, Colors.orange],
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
               ),
             ),
-            Expanded(
-              child: Container(
-                padding: EdgeInsets.all(16),
-                child: Text(
-                  // If listening is active show the recognized words
-                  _speechToText.isListening
-                      ? '$_lastWords'
-                      // If listening isn't active but could be tell the user
-                      // how to start it, otherwise indicate that speech
-                      // recognition is not yet ready or not supported on
-                      // the target device
-                      : _speechEnabled
-                          ? 'Tap the microphone to start listening...'
-                          : 'Speech not available',
+            // padding: EdgeInsets.only(top: MediaQuery.of(context).padding.top),
+            child: AppBar(
+              title: const Text('Search',
+                  style: TextStyle(
+                      color: Colors.white, fontWeight: FontWeight.bold)),
+              backgroundColor: Colors.transparent,
+              elevation: 0,
+            ),
+          ),
+          Container(
+            padding: EdgeInsets.all(16),
+            child: TextField(
+              controller: _textEditingController,
+              onChanged: (value) {
+                // Handle text input change to update search query
+                _performSearch(value.toLowerCase());
+              },
+              decoration: InputDecoration(
+                hintText: 'Search by name',
+                hintStyle: TextStyle(color: Colors.grey),
+                prefixIcon: Icon(Icons.search, color: Colors.pinkAccent),
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(12),
+                  // borderSide: BorderSide.none,
+                ),
+                focusedBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(12),
+                  borderSide: const BorderSide(color: Colors.pinkAccent),
                 ),
               ),
+              cursorColor: Colors.pinkAccent,
+              cursorOpacityAnimates: true,
             ),
-          ],
-        ),
+          ),
+          Expanded(
+            child: ListView.builder(
+              itemCount: searchResults.length,
+              itemBuilder: (context, index) {
+                return Card(
+                  margin:
+                      const EdgeInsets.symmetric(vertical: 10, horizontal: 16),
+                  child: ListTile(
+                    title: Text(searchResults[index].title),
+                    subtitle: Text(searchResults[index].lyrics),
+                    onTap: () {
+                      // Handle tapping on a search result if needed
+                    },
+                  ),
+                );
+              },
+            ),
+          ),
+          Container(
+            padding: const EdgeInsets.symmetric(vertical: 20.0, horizontal: 16),
+            alignment: Alignment.center,
+            child: Text(
+              // If listening is active show the recognized words
+              _speechToText.isListening
+                  ? '$_lastWords'
+                  // If listening isn't active but could be tell the user
+                  // how to start it, otherwise indicate that speech
+                  // recognition is not yet ready or not supported on
+                  // the target device
+                  : _speechEnabled
+                      ? 'Tap the microphone to start listening...'
+                      : 'Speech not available',
+              style: TextStyle(fontSize: 15.0, color: Colors.grey),
+            ),
+          ),
+        ],
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _isListening ? _stopListening : _startListening,
-        tooltip: 'Listen',
-        child: Icon(_isListening ? Icons.mic : Icons.mic_off),
+      floatingActionButton: Container(
+        decoration: const BoxDecoration(
+          shape: BoxShape.circle,
+        ),
+        child: FloatingActionButton(
+          shape: const CircleBorder(),
+          onPressed: _isListening ? _stopListening : _startListening,
+          tooltip: 'Listen',
+          backgroundColor: Colors.orange,
+          // backgroundColor: Colors.transparent,
+          child: Icon(
+            _isListening ? Icons.mic_off : Icons.mic,
+          ),
+        ),
       ),
     );
   }
@@ -199,20 +263,41 @@ class SearchResultsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Search Results'),
-      ),
-      body: ListView.builder(
-        itemCount: searchResults.length,
-        itemBuilder: (context, index) {
-          return ListTile(
-            title: Text(searchResults[index].title),
-            subtitle: Text(searchResults[index].lyrics),
-            onTap: () {
-              // Handle tapping on a search result if needed
-            },
-          );
-        },
+      body: Column(
+        children: <Widget>[
+          Container(
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                colors: [Colors.pinkAccent, Colors.orange],
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+              ),
+            ),
+            padding: EdgeInsets.only(top: MediaQuery.of(context).padding.top),
+            child: AppBar(
+              title: Text('Search Results'),
+              backgroundColor: Colors.transparent,
+              elevation: 0,
+            ),
+          ),
+          Expanded(
+            child: ListView.builder(
+              itemCount: searchResults.length,
+              itemBuilder: (context, index) {
+                return Card(
+                  margin: EdgeInsets.symmetric(vertical: 10, horizontal: 16),
+                  child: ListTile(
+                    title: Text(searchResults[index].title),
+                    subtitle: Text(searchResults[index].lyrics),
+                    onTap: () {
+                      // Handle tapping on a search result if needed
+                    },
+                  ),
+                );
+              },
+            ),
+          ),
+        ],
       ),
     );
   }
