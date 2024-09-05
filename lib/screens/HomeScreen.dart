@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/animation.dart';
+
+import 'package:flutter_animate/flutter_animate.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -23,26 +26,45 @@ class HomeScreen extends StatelessWidget {
           ),
         ],
       ),
-      body: const Center(
+      body: Center(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            ItemCard(
-              title: "Aarti",
-              startColor: Colors.orange,
-              endColor: Colors.pink,
-            ),
-            ItemCard(
-              title: "Bhajan",
-              startColor: Colors.pinkAccent,
-              endColor: Colors.orange,
-            ),
-            ItemCard(
-                title: "Jakhadi",
-                startColor: Colors.orangeAccent,
-                endColor: Colors.pinkAccent),
-          ],
+          children: AnimateList(
+            interval: 400.ms,
+            effects: [
+              const FadeEffect(
+                begin: 0.0,
+                end: 1.0,
+                delay: Duration(milliseconds: 500),
+                duration: Duration(milliseconds: 1500),
+                curve: Curves.easeInOut,
+              ),
+              const SlideEffect(
+                begin: Offset(-4, -2),
+                end: Offset(0.0, 0.0),
+                // delay: Duration(milliseconds: 100),
+                duration: Duration(milliseconds: 1000),
+                curve: Curves.fastEaseInToSlowEaseOut,
+              )
+            ],
+            children: [
+              const ItemCard(
+                title: "Aarti",
+                startColor: Colors.orange,
+                endColor: Colors.pink,
+              ),
+              const ItemCard(
+                title: "Bhajan",
+                startColor: Colors.pinkAccent,
+                endColor: Colors.orange,
+              ),
+              const ItemCard(
+                  title: "Jakhadi",
+                  startColor: Colors.orangeAccent,
+                  endColor: Colors.pinkAccent),
+            ],
+          ),
         ),
       ),
     );

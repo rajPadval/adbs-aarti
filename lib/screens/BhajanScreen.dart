@@ -14,15 +14,16 @@ class BhajanScreen extends StatefulWidget {
 class _BhajanScreenState extends State<BhajanScreen> {
   List<Article> articles = [];
   // List to hold Article objects
+
   @override
   void initState() {
     super.initState();
-    loadAartis(); // Load Aarti data when the screen initializes
+    loadAartis(); // Load Bhajan data when the screen initializes
   }
 
   Future<void> loadAartis() async {
     try {
-      // Load JSON data from assets/aarti_data.json
+      // Load JSON data from assets/bhajan_data.json
       String jsonData = await rootBundle.loadString('assets/bhajan_data.json');
 
       // Parse JSON string into a List of Maps
@@ -37,7 +38,7 @@ class _BhajanScreenState extends State<BhajanScreen> {
         articles = loadedArticles;
       });
     } catch (e) {
-      print('Error loading Aartis: $e');
+      print('Error loading Bhajans: $e');
       // Handle error loading data
     }
   }
@@ -45,25 +46,53 @@ class _BhajanScreenState extends State<BhajanScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('List of Bhajans'),
-      ),
-      body: ListView.builder(
-        itemCount: articles.length,
-        itemBuilder: (context, index) {
-          return ListTile(
-            leading: const Icon(Icons.menu_book_rounded),
-            title: Text(articles[index].title),
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => DetailsScreen(article: articles[index]),
-                ),
-              );
-            },
-          );
-        },
+      body: Stack(
+        children: [
+          // Gradient background for AppBar
+          Container(
+            height: kToolbarHeight + MediaQuery.of(context).padding.top,
+            decoration: const BoxDecoration(
+              gradient: LinearGradient(
+                colors: [Colors.pinkAccent, Colors.orange],
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+              ),
+            ),
+          ),
+          // AppBar with transparent background
+          AppBar(
+            title: const Text('List of Bhajans',
+                style: TextStyle(
+                    color: Colors.white, fontWeight: FontWeight.bold)),
+            backgroundColor: Colors.transparent,
+            elevation: 0,
+            iconTheme: const IconThemeData(color: Colors.white),
+            actionsIconTheme: const IconThemeData(color: Colors.white),
+          ),
+          // Main content
+          Padding(
+            padding: EdgeInsets.only(
+                top: kToolbarHeight + MediaQuery.of(context).padding.top),
+            child: ListView.builder(
+              itemCount: articles.length,
+              itemBuilder: (context, index) {
+                return ListTile(
+                  leading: const Icon(Icons.menu_book_rounded),
+                  title: Text(articles[index].title),
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) =>
+                            DetailsScreen(article: articles[index]),
+                      ),
+                    );
+                  },
+                );
+              },
+            ),
+          ),
+        ],
       ),
     );
   }

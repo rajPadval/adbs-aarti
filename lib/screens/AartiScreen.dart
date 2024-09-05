@@ -45,25 +45,53 @@ class _AartiScreenState extends State<AartiScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('List of Aartis'),
-      ),
-      body: ListView.builder(
-        itemCount: articles.length,
-        itemBuilder: (context, index) {
-          return ListTile(
-            leading: const Icon(Icons.menu_book_rounded),
-            title: Text(articles[index].title),
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => DetailsScreen(article: articles[index]),
-                ),
-              );
-            },
-          );
-        },
+      body: Stack(
+        children: [
+          // Gradient background for AppBar
+          Container(
+            height: kToolbarHeight + MediaQuery.of(context).padding.top,
+            decoration: const BoxDecoration(
+              gradient: LinearGradient(
+                colors: [Colors.orange, Colors.pink],
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+              ),
+            ),
+          ),
+          // AppBar with transparent background
+          AppBar(
+            title: const Text('List of Aartis',
+                style: TextStyle(
+                    color: Colors.white, fontWeight: FontWeight.bold)),
+            backgroundColor: Colors.transparent,
+            elevation: 0,
+            iconTheme: const IconThemeData(color: Colors.white),
+            actionsIconTheme: const IconThemeData(color: Colors.white),
+          ),
+          // Main content
+          Padding(
+            padding: EdgeInsets.only(
+                top: kToolbarHeight + MediaQuery.of(context).padding.top),
+            child: ListView.builder(
+              itemCount: articles.length,
+              itemBuilder: (context, index) {
+                return ListTile(
+                  leading: const Icon(Icons.menu_book_rounded),
+                  title: Text(articles[index].title),
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) =>
+                            DetailsScreen(article: articles[index]),
+                      ),
+                    );
+                  },
+                );
+              },
+            ),
+          ),
+        ],
       ),
     );
   }

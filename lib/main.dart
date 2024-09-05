@@ -4,6 +4,7 @@ import 'package:adbs_aarti/screens/HomeScreen.dart';
 import 'package:adbs_aarti/screens/JakhadiScreen.dart';
 import 'package:adbs_aarti/screens/SearchScreen.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 
 void main() {
   runApp(const MyApp());
@@ -23,7 +24,10 @@ class MyApp extends StatelessWidget {
           useMaterial3: true,
         ),
         routes: {
-          '/': (context) => const HomeScreen(),
+          '/': (context) => Animate(
+                effects: const [FadeEffect(), ScaleEffect()],
+                child: const HomeScreen(),
+              ),
           '/search': (context) => SearchScreen(),
           '/aarti': (context) => const AartiScreen(),
           '/bhajan': (context) => const BhajanScreen(),

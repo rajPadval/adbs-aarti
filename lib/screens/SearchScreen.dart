@@ -1,24 +1,11 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 import 'package:speech_to_text/speech_recognition_result.dart';
 import 'package:speech_to_text/speech_to_text.dart';
 import 'package:permission_handler/permission_handler.dart';
-
-// Define a model class for your articles
-class Article {
-  final String title;
-  final String lyrics;
-
-  Article({required this.title, required this.lyrics});
-
-  // Factory method to create Article objects from JSON
-  factory Article.fromJson(Map<String, dynamic> json) {
-    return Article(
-      title: json['title'],
-      lyrics: json['lyrics'],
-    );
-  }
-}
+import "../constants/article.dart";
+import "package:flutter/animation.dart";
 
 class SearchScreen extends StatefulWidget {
   SearchScreen({Key? key}) : super(key: key);
@@ -171,6 +158,8 @@ class _SearchScreenState extends State<SearchScreen> {
                       color: Colors.white, fontWeight: FontWeight.bold)),
               backgroundColor: Colors.transparent,
               elevation: 0,
+              iconTheme: const IconThemeData(color: Colors.white),
+              actionsIconTheme: const IconThemeData(color: Colors.white),
             ),
           ),
           Container(
@@ -200,6 +189,7 @@ class _SearchScreenState extends State<SearchScreen> {
           ),
           Expanded(
             child: ListView.builder(
+              physics: const BouncingScrollPhysics(),
               itemCount: searchResults.length,
               itemBuilder: (context, index) {
                 return Card(
@@ -211,7 +201,7 @@ class _SearchScreenState extends State<SearchScreen> {
                     onTap: () {
                       // Handle tapping on a search result if needed
                     },
-                  ),
+                  ).animate().scale(),
                 );
               },
             ),

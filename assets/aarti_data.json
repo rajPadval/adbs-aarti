@@ -1,53 +1,77 @@
-
 [
-    {
-        "id": 1,
-        "title": "Santoshi Mata Aarti",
-        "lyrics": "Jai Santoshi Mata, Maiya Jai Santoshi Mata,\nSankat harana mangala dayini, Jai Santoshi Mata.\n\nAarti ki jai Santoshi Mata, Maiya jai Santoshi Mata,\nSankat harana mangala dayini, Jai Santoshi Mata.\n\nMangala ki seva sunaave, Nita nava din manadaata,\nSankat harana mangala dayini, Jai Santoshi Mata.\n\nSundar chir sunahari mukhada, Vrata ko dharan kare sakhi,\nSankat harana mangala dayini, Jai Santoshi Mata.\n\nBhakta pukara aankhiya tihari, Darsha dikhaaya daya nidhata,\nSankat harana mangala dayini, Jai Santoshi Mata.\n\nJai Santoshi Mata, Maiya Jai Santoshi Mata,\nSankat harana mangala dayini, Jai Santoshi Mata."
-    },
-    {
-        "id": 2,
-        "title": "Ganesh Aarti",
-        "lyrics": "Jai Ganesh Jai Ganesh Jai Ganesh Deva,\nMata jaki Parvati Pita Mahadeva.\n\nEk dant dayavant, Char bhuja dhari,\nMathe sindur sohe, Muse ki savari.\n\nJai Ganesh Jai Ganesh Jai Ganesh Deva,\nMata jaki Parvati Pita Mahadeva.\n\nAndhan ko ankh det, Kodhin ko kaya,\nBanjhan ko putra det, Nirdhan ko maya.\n\nJai Ganesh Jai Ganesh Jai Ganesh Deva,\nMata jaki Parvati Pita Mahadeva.\n\nPaan chadhe, Phul chadhe, Aur chadhe meva,\nLadduan ka bhog lage, Sant kare seva.\n\nJai Ganesh Jai Ganesh Jai Ganesh Deva,\nMata jaki Parvati Pita Mahadeva."
-    },
-    {
-        "id": 3,
-        "title": "Durga Aarti",
-        "lyrics": "Jai Ambe Gauri, Maiya Jai Shyama Gauri,\nTumko nishdin dhyavat, Hari Bramha Shivji.\n\nJai Ambe Gauri, Maiya Jai Shyama Gauri,\nMang sindur birajat, Tiko mrigmadko.\n\nUjjval se dou naina, Chandravadan niko,\nKanak saman kalevar, Raktambar rajeo.\n\nJai Ambe Gauri, Maiya Jai Shyama Gauri,\nKanak saman kalevar, Raktambar rajeo.\n\nKanak saman kalevar, Raktambar rajeo.\nRaktambar rajeo.\n\nJai Ambe Gauri, Maiya Jai Shyama Gauri."
-    },
-    {
-        "id": 4,
-        "title": "Sant Tukaram Aarti",
-        "lyrics": "Ghei Chand Makarand, Bhakti Gheu Vitthal,\nDnyaneshwar Mauli, Nivadun Vishwa.\n\nTukaram aala vruksha, Kavadee pahilelya,\nBhakti Gheu Vitthal, Dnyaneshwar Mauli.\n\nTukaram aala vruksha, Kavadee pahilelya,\nBhakti Gheu Vitthal, Dnyaneshwar Mauli.\n\nGhei Chand Makarand, Bhakti Gheu Vitthal,\nDnyaneshwar Mauli, Nivadun Vishwa."
-    },
-    {
-        "id": 5,
-        "title": "Sant Namdev Aarti",
-        "lyrics": "Bhava Sagara Taranaya, Namacha Gheu Savaya,\nNamacha Gheu Savaya, Bhava Sagara Taranaya.\n\nBhava Sagara Taranaya, Namacha Gheu Savaya,\nNamacha Gheu Savaya, Bhava Sagara Taranaya.\n\nDola Neeti Vahile, Vahile Bhakta Vatsala,\nBhava Sagara Taranaya, Namacha Gheu Savaya.\n\nNamacha Gheu Savaya, Bhava Sagara Taranaya,\nNamacha Gheu Savaya, Bhava Sagara Taranaya."
-    },
-    {
-        "id": 6,
-        "title": "Vithoba Aarti",
-        "lyrics": "Tujhe Roop Chitti Raho, Muktaaya Tu Jeevo,\nTu Vrukshaas Tujeeve, Tu Shri Guru Daas.\n\nNamo Namo Namo Namaste, Namaste Namaste Namaste.\n\nMaja Tujhe Daasa, Maja Tujhe Daasa,\nTu Jiv Maja Jiva, Maj Maja Nidasa.\n\nNamo Namo Namo Namaste, Namaste Namaste Namaste."
-    },
-    {
-        "id": 7,
-        "title": "Sant Eknath Aarti",
-        "lyrics": "Jai Jai Vithoba Rakhumai, Eknath Bhakta Vatsala,\nNamochkar Dukh Harana, Pancha Bhuta Taya Raja.\n\nJai Jai Vithoba Rakhumai, Eknath Bhakta Vatsala,\nNamochkar Dukh Harana, Pancha Bhuta Taya Raja.\n\nShri Vithobancha Pandarapura, Shri Mukta Gaya Paaya,\nNamochkar Dukh Harana, Pancha Bhuta Taya Raja."
-    },
-    {
-        "id": 8,
-        "title": "Sant Dnyaneshwar Aarti",
-        "lyrics": "Brahma Murari Tripurantakari, Bhanu Shashi Bhumisutaya,\nBuddha Shashanka, Ahish Chaturbhuja,\nKantamaha, Kapaladi, Kritamala, Dhyanavigraha.\n\nJai Dev Jai Dev, Jai Mangal Murti,\nDarshan Matre Man Kamana Purti.\n\nJai Dev Jai Dev, Jai Mangal Murti,\nDarshan Matre Man Kamana Purti."
-    },
-    {
-        "id": 9,
-        "title": "Sant Gora Kumbhar Aarti",
-        "lyrics": "Gora Kumbhar Janmala, Bhakti Gheu Gana Ghara,\nGheu Vitthal Prasada, Tuzha Gora Kumbhar.\n\nJai Jai Panduranga, Rakumai Jai Janani,\nPurna Shri Gurudeva, Tuzha Gora Kumbhar."
-    },
-    {
-        "id": 10,
-        "title": "Sant Janabai Aarti",
-        "lyrics": "Bhava Sagara Taranaya, Janabai Gheu Namacha,\nNamacha Gheu Savaya, Bhava Sagara Taranaya.\n\nBhava Sagara Taranaya, Janabai Gheu Namacha,\nNamacha Gheu Savaya, Bhava Sagara Taranaya.\n\nDola Neeti Vahile, Vahile Bhakta Vatsala,\nBhava Sagara Taranaya, Janabai Gheu Namacha."
-    }
+  {
+    "id": 1,
+    "title": "Sukhkarta Dukhharta",
+    "lyrics": "सुखकर्ता दुःखहर्ता वार्ता विघ्नाची \n नुरवी पुरवी प्रेम कृपा जयाची ।\n सर्वांगी सुंदर उटी शेंदूराची ।\n कंठी झळके माळ मुक्ताफळाची ।।\n जय देव जय देव जय मंगल मूर्ती ।\n दर्शनमात्रे मनकामनापुर्ती ।।\n जय देव रत्नखचित फरा तुज गौरीकुमरा ।\n चंदनाची उटी कुंकुम केशरा \n हीरे जडित मुकुट शोभतो बरा ।\n रुणझुणती नूपुरे चरणी घागरिया ।।\n जय देव लंबोदर पीतांबर फणिवरबंधना ।\n सरळ सोंड वक्रतुण्ड त्रिनयना ।\n दास रामाचा वाट पाहे सदना ।\n संकटी पावावे निर्वाणी रक्षावे सुरवरवंदना ।।\n जय देव"
+  },
+  {
+    "id": 2,
+    "title": "Shendur Lal Chadhayo",
+    "lyrics": "शेंदुर लाल चढायो अच्छा गजमुखको ।\nदोदिल लाल बिराजे सुत गौरिहरको ।\nहाथ लिये गुडल सांई सुरवरको ।\nमहिमा कहे न जाय लागत हूं पदको ।। १ ।।\nजय जय जी गणराज विद्या सुखदाता ।\nधन्य तुम्हार दर्शन् मेरा मन रमता ।। धृ ।।\nअष्टौ सिद्धी दासी संकटको बैरि ।\nविघ्नविनाशन मंगल मूरत अधिकारी ।\nकोटीसूरजप्रकाश ऐसी छबि तेरी ।\nगंडस्थलमदमस्तक झूले शशिबिहारि ।। २ ।।\nभावभगतसे कोई शरणागत आवे ।\nसंतत संपत सबही भरपूर पावे ।\nऐसे तुम महाराज मोको अति भावे ।\nगोसावीनंदन निशिदिन गुन गावे ।। ३ ।।"
+  },
+  {
+    "id": 3,
+    "title": "Shri Datta Aarti",
+    "lyrics": "त्रिगुणात्मक त्रैमूर्ती दत्त हा जाणा ।\nत्रिगुणी अवतार त्रैलोक्य राणा ।\nनेती नेती शब्द न ये अनुमाना ।\nसुरवर मुनिजन योगे समाधी न ये ध्यान ।।\nजय देव जय देव जय श्री गुरुदत्ता ।\nआरति ओवाळीता हरली भवचिन्ता ।।\nजय देव सबाह्य अभ्यंतरी तू एक दत्त ।\nअभाग्यासी कैसी नकळे ही मात ।\nपराही परतली कैसा हा हेत ।\nजन्म मरणाचा पुरलासे अंत ॥।\nजय देव दत्त येऊनीया उभा ठाकला ।\nसद्भावे साष्टांगे प्रणिपात केला ।\nप्रसन्न होउनीया आशीर्वाद दिधला ।\nजन्मा मरणाचा फेरा वाचविला ।।\nजय देव दत्त दत्त ऐसे लागले ध्यान ।\nहरपले मन झले उन्मन ।\nमी तू पणाची झाली बोळवण ।\nतू एका जनार्दनी श्री दत्त ध्यान ।।\nजय देव"
+  },
+  {
+    "id": 4,
+    "title": "Yuge Atthavis Vithevari",
+    "lyrics": "युगे अठ्ठावीस विटेवरी ऊभा ।\nवामांगी रखुमाई दिसे दिव्य शोभा ।\nपुंडलिकाचे भेटी परब्रह्म आले गा ।\nचरणी वाहे भीमा उद्धरी जगा ||\nजय देव जय देव जय पांडुरंगा ।\nरखुमाई वल्लभा राईच्या वल्लभा ।\nपावे जिवलगा ।। जय देव\nतुळसी माळा गळा कर ठेवुनी कटी ।\nकासे पितांबर कस्तुरी लल्लाटी ।\nदेव सुरवर नित्य येती भेटी ।\nगरुड हनूमंत पुढे उभे राहती ॥\nजय देव\nधन्य वेणुनाद अनुक्षेत्रपाळा ।\nसुवर्णाची कमळे वनमाळा गळा ।\nराई रखुमाबाई राणीया सकळा ।\nओवाळू आरत्या विठोबा सावळा ।। जय देव\nओवाळू आरत्या कुरवंड्या येती ।\nचंद्रभागेमध्ये सोडुनिया देती ।\nदिंड्या पताका वैष्णव नाचती ।\nपंढरीचा महिमा वर्णावा किती ।। जय देव\nआषाढी कार्तिकी भक्तजन येती ।\nचंद्रभागेमध्ये स्नान जे करती ।\nदर्शन हेळामात्रे तया होय मुक्ती ।\nकेशवासी नामदेव भावे ओवाळिती ।। जय देव"
+  },
+  {
+    "id": 5,
+    "title": "Vitthal Aarti",
+    "lyrics": "येई हो विठ्ठले माझे माऊली ये ।\nनिढळावरी कर ठेवुनि वाट मी पाहे || धृ ||\nआलिया गेलिया हाती धाडी निरोप ।\nपंढरपूरी आहे माझा मायबाप् ।। १ ।।\nपिवळा पीतांबर कैसा गगनी झळकला ।\nगरुडांवरि बैसोनि माझा कैवारी आला ।। २ ॥\nविठोबाचे राज्य आम्हां नित्य दिपवाळी ।\nविष्णुदास नामा जीवेभावे ओंवाळी ।। ३ ।।"
+  },
+  {
+    "id": 6,
+    "title": "Lavalavti Vikharala",
+    "lyrics": "लवथवती विक्राळा ब्रह्मांडी माळा ।\nविषे कंठ काळा त्रिनेत्री ज्वाळा ।\nलावण्य सुन्दर मस्तकी वाळा ।\nमराठी आरती संग्रह तेथुनिया जळ निर्मळ वाहे झुळझुळा ।।\nजय देव जय देव जय देव जय श्री शंकरा ।\nआरती ओवाळू तुज कर्पुरगौरा ।।\nजय देव कर्पुरगौरा भोळा नयनी विशाळा ।\nअर्धांगी पार्वती सुमनांच्या माळा ।\nविभुतीचे उधळण शितकंठ नीळा ।\nऐसा शंकर शोभे उमावेल्हाळा ||\nजय देव देवी दैत्य सागर मंथन पै केले ।\nत्यामाजी अवचीत हलहल जे उठले ।\nते त्वा असुरपणे प्राशन केले ।\nनीळकंठ नाम प्रसिद्ध झाले ।।\nजय देव व्याघ्रांबर फणिवरधर सुंदर मदनारी ।\nपंचानन मनमोहन मुनिजन सुखकारी ।\nशतकोटीचे बीज वाचे उच्चारी ।\nरघुकुळटीळक रामदासा अंतरी ।।\nजय देव"
+  },
+  {
+    "id": 7,
+    "title": "Durghe Durghat Bhari",
+    "lyrics": "दुर्गे दुर्घट भारी तुजवीण संसारी ।\nअनाथ नाथे अम्बे करुणाविस्तारी ।\nवारी वारी जन्म मरणांते वारी ।\nहारी पडलो आता संकट नेवारी ।। १ ।।\nजय देवी जय देवी महिषासुरमथिनि ।\nसुरवर ईश्वर वरदे तारक संजीवनी || धृ ||\nतुजवीण भुवनी पाहता तुज असे नाही ।\nचारी श्रमले परंतु न बोलवे काही ।\nसाही विवाद करिता पडले प्रवाही ।\nते तू भक्तालागी पावसि लवलाही ।। २।।\nप्रसन्न वदने प्रसन्न होसी निजदासा ।\nक्लेशांपासुनी सोडवी तोडी भवपाशा ।\nअम्बे तुजवाचून कोण पुरवील् आशा ।\nनरहरी तल्लीन झाला पदपंकजलेशा ।। ३ ।।"
+  },
+  {
+    "id": 8,
+    "title": "Satyanarayanachi Aarti",
+    "lyrics": "जय जय दीनदयाळ सत्यनारायण देवा ।\nपंचारति ओवाळूं श्रीपति तुज भक्तिभावा ।। धृ।।\nविधियुक्त पूजुनी करिती पुराण श्रवण ।\nपरिमळद्रव्यांसहित पुष्पमाळा अर्पून ।।\nघृतयुक्त शर्करामिश्रित गोधूमचूर्ण ।\nप्रसाद भक्षण करितां प्रसन्न तूं नारायण ।। जय ।। १ ||\nशतानंद विप्रें पूर्वी व्रत हैं आचरिलें ।\nदरिद्र दवडुनि अंतीं त्यातें मोक्षपदा नेलें ।।\nत्यापासुनि व्रत या कलियुगिं सकळां श्रुत झालें ।\nभावार्थे पूजितां सर्वां इच्छित लाधलें ।। जय ।। २ ॥\nसाधुवैश्यें संततिसाठीं तुजला प्रार्थियलें ।\nइच्छित पुरतां मदांध होऊनि व्रत न आचरिलें ।\nत्या पापानें संकटिं पडुनी दुःखहि भोगिलें ।\nस्मृति होऊनि आचरितां व्रत त्या तुवांचि उद्धरिलें ।। जय ।। ३ ।।\nप्रसाद विसरुनि पतिभेटीला कलावती गेली ।\nक्षोभ तुझा होतांचि तयाची नौका बुडाली ।।\nअंगध्वजरायाची यापरि दुःखस्थिति आली ।\nमृतवार्ता शतपुत्रांची सत्वर कर्णी परिसली ।। जय || ४ ||\nपुनरपि पूजुनि प्रसाद ग्रहण करितां तत्क्षणीं ।\nपतिची नौका तरली देखे कलावती नयनीं ।।\nअंगध्वजरायासी पुत्र भेटति येऊनि ।\nऐसा भक्तां संकटिं पावसि तूं चक्रपाणी ।। जय ।। ५॥\nअनन्यभावें पूजुनि हैं व्रत जे जन आचरति ।\nइच्छित पुरविसी त्यांतें देउनि संतति संपत्ती ।।\nसंहरती भवदुरितें सर्वहि बन्धनें तुटती ।\nराजा रंका समान मानुनि पावसी श्रीपती ।। जय ।। ६॥\nअसा तव व्रतमहिमा अपार वर्णू मी कैसा ।\nभक्तिपुरस्सर आचरती त्यां पावसि जगदीशा ।। \n भक्तांचा कनवाळू कल्पद्रुम तूं सर्वेशा । मोरेश्वरसुत वासुदेव तुज विनवी भवनाशा ।। जय ।। ७॥ "
+  },
+  {
+    "id": 9,
+    "title": "Pasayadan",
+    "lyrics": "आता विश्वात्मके देवे ।\nयेणे वाग्यज्ञे तोषावे ।\nतोषोनि मज् द्यावे ।\nपसायदान् हे ।।\nजे खळांचि व्यंकटी सांडो ।\nतया सत्कर्मी रति वाढो ।\nभूता परस्परे पडो ।\nमैत्र जीवांचे ||\nदुरितांचे तिमिर जावो ।\nविश्व स्वधर्म सूर्ये पाहो ।\nजो जे वांछील तो ते लाहो ।\nप्राणिजात् ।।\nवर्षत सकळ मंगळी ।\nईश्वरनिष्ठांची मांदियाळी ।\nअनवरत भूमंडळी ।\nभेटतु भूता ।।\nचला कल्पतरुंचे अरव् ।\nचेतना चिंतामणीचे गाव् ।\nबोलते जे अर्णव ।\nपीयूषाचे ॥\nचंद्रमे जे अलांछन् ।\nमार्तंड जे तापहीन् ।\nते सर्वांही सदा सज्जन् ।\nसोयरे होतु ।।\nकिंबहुना सर्वसुखी ।\nपूर्ण होउनि तिहीं लोकी ।\nभजीजो आदिपुरुखी ।\nअखंडित् ।।\nयेथ म्हणे श्रीविश्वेश्वरावो ।\nहा होईल दान पसावो ।\nयेणे वरे ज्ञानदेवो ।\nसुखिया झाला ।।"
+  },
+  {
+    "id": 10,
+    "title": "Dashavatar Aarti",
+    "lyrics": "आरती सप्रेम जय जय विठ्ठल परब्रह्म ।\nभक्तसंकटी नाना स्वरूप स्थापिसी स्वधर्म ।। धृ।।\nअंबऋषीकारणें गर्भवास सोशीसी ।\nवेद नेले चोरूनी ब्रह्मा आणुनियां देसी ।।\nमत्स्यरूपी नारायण सप्तही सागर धुंडीसी ।\nहस्त लागतां शंखासुरा तुझा वर देखी ।। १।।\nरसातळाशी जातां पृथ्वी पाठीवर घेसी ।\nपरोपकारासाठी देवा कांसव झालासी ।।\nदाढें धरूनी पृथ्वी नेतां वराहरूप होसी ।\nप्रल्हादाकारणें स्तंभी नरहरि गुरगुरसी ।। २।।\nपांचवे अवतारी बळिच्या द्वाराला जासी ।\nभिक्षे स्थळ मागुनी बळिला पाताळी नेसी ।।\nसर्व समर्पण केलें म्हणउनि प्रसन्न त्या होसी ।।\nवामनरूप धरूनी बळिच्याद्वारीं तिष्ठसी ।। ३ ।।\nसहस्त्रार्जुन मातला जमदग्नीचा वध केला ।\nकष्टी ते रेणुका म्हणुनी सहस्त्रार्जुन वधिला ॥।\nनिःक्षत्री पृथ्वी दान दिधली विमाला ।\nसहावा अवतार परशुराम प्रगटला ॥ ४ ।।\nमातला रावण सर्वां उपद्रव केला ।\nतेहतीस कोटी देव बंदी हरलें सीतेला ।।\nपितृवचनालागीं रामें बनवास केला ।\nमिळोनी वानर सहित राजाराम प्रगटला || ५||\nदेवकीवसुदेव बंदीमोचन त्वां केलें ।\nनंदाघरी जाउन निजसुख गोकुळा दिधलें ।।\nगोरसचोरी करीतां नवलक्ष गोपाळ मिळविले ।\nगोपिकांचें प्रेम देखुनि श्रीकृष्ण भुलले ।। ६ ।।\nबौद्ध कलंकी कलियुगं ।\nझाला अधर्म हा अवघा ।\nसांडुनि नित्यधर्म सोडुनि नंदाची सेवा ।।\nम्लेच्छमर्दन करिसी म्हणुनि कलंकी केशवा ।\nबहिरवि जान्हवि द्यावि निजसुखानंदसेवा ।। ७।।"
+  },
+  {
+    "id": 11,
+    "title": "Sant Dnyaneshwar Aarti",
+    "lyrics": "आरती ज्ञानराजा महाकैवल्य तेजा\nसेविती साधुसन्त मनू वेधला माझा ।। १ ।।\nआरती लोपले ज्ञान जगीरु हित\nनेणती कोणीरु अवतार पांदुरंगरु\nनाम ठेवीले ज्ञनी ।। २ ।।\nआरती कनकाचे ताट करीरु\nउभ्या गोपिका नारीरु नारद\nतुम्बरहूरु साम गायन करी ।। ३ ।।\nआरती प्रकट गुह्य बोलेरु\nविश्व ब्रह्मची केले रामा\nजनार्दनीरु पायी टकची ठेले ।। ४ ।।\nआरती"
+  },
+  {
+    "id": 12,
+    "title": "Sant Tukaram Aarti",
+    "lyrics": "आरती तुकारामा । स्वामी सद्गुरुधामा ।।\nसच्चिदानंद मूर्ती । पाय दाखवी आम्हां ।। धृ ।।\nराघवें सागरांत । पाषाण तारीले ।।\nतैसे हे तुकोबाचे । अभंग उदकीं रक्षिले ।। १ ।।\nतुकितां तुलनेसी । ब्रह्म तुकासी आलें ।।\nम्हणुनी रामेश्वरें । चरणीं मस्तक ठेविलें ।। २ ।।"
+  },
+  {
+    "id": 13,
+    "title": "Sant Eknath Aarti",
+    "lyrics": "आरती एकनाथा । महाराजा समर्था ।।\nत्रिभुवनीं तूंचि थोर । जगद्गुरु जगन्नाथा ।। धृ।।\nएकनाथ नाम सार । वेदशास्त्रांचें गूज ।।\nसंसारदुःख नास । महामंत्राचें बीज ।। १ ।।\nएकनाथ नाम घेतां । सुख वाटलें चित्ता ।।\nअनंत गोपाळदासा । धणी न पुरे गातां ।। २।।"
+  },
+  {
+    "id": 14,
+    "title": "Nirop Aarti",
+    "lyrics": "जाहलें भजन आम्ही नमितों चरणा ।\nनमितों तव चरणा ।\nवारुनिया विघ्नें देवा रक्षावे दीना || धृ ||\nदास तुझे आम्ही देवा तुजलाची ध्यातों ।\nदेवा तुजलाची ध्यातों ।\nप्रेमें करुनियां देवा गुण तुझे गातों ।। १ ।।\nतरी न्यावी सिद्धी देवा हेची वासना ।\nदेवा हेची वासना ।\nरक्षूनियां सर्वां द्यावी आम्हासी आज्ञा ।। २ ।।\nमागणें तें देवा आतां एकची आहे ।\nआतां एकची आहे ।\nतरुनियां सकळां आम्हां कृपादृष्टी पाहें ।। ३।।\nजेव्हां सर्व आम्ही मिळं ऐशा या ठाया ।\nऐशा या ठाया ।\nप्रेमानंदें लागू तुझी कीर्ती गावया || ४ ||\nसदा ऐशी भक्ती राहो आमुच्या मनीं ।\nआमुच्या मनीं ।\nहेची देवा तुम्हा असे नित्य विनवणी ।। ५ ।।\nवारुनियां संकटें आतां आमुचीं सारी ।\nआतां आमुची सारी ।\nकृपेची साउली देवा दीनावरि करीं ।। ६ ।।\nनिरंतर आमुची चिंता तुम्हां असावी ।\nचिंता तुम्हां उ सर्वांची लज्जा देवा तुम्ही रक्षावी ।। ७ ।।\nनिरोप घेतों आतां आम्हां आज्ञा असावी |\nचुकलें आमुचें कांहीं त्याची क्षमा असावी ।।"
+  },
+  {
+    "id": 15,
+    "title": "Ghanlin Lotangan",
+    "lyrics": "घालीन लोटांगण वंदीन चरण ।\nडोळ्यांनी पाहिन रूप तुझे ।\nप्रेमें आलिंगीन आनंद पूजन ।\nभावे ओवाळिन म्हणे नामा ॥\n\nत्वमेव माता पिता त्वमेव ।\nत्वमेव बन्धुः सखा त्वमेव ।\nत्वमेव विद्या द्रविणं त्वमेव ।\nत्वमेव सर्वं मम देवदेव ||\n\nकायेन वाचा मनसेंद्रियैर्वा ।\nबुध्यात्मना वा प्रकृति स्वभावात् ।\nकरोमि यद्यत् सकलं परस्मै ।\nनारायणायेती समर्पयामि ||\n\nअच्युतं केशवं राम नारायणम् ।\nकृष्णदामोदरं वासुदेवं भजे |\nश्रीधरं माधवं गोपिकावल्लभम् ।\nजानकीनायकं रामचंद्रं भजे ॥\n\nहरे राम हरे राम राम राम हरे हरे ।\nहरे कृष्ण हरे कृष्ण कृष्ण कृष्ण हरे हरे ।।\n\nमंगलमुर्ती मोरया ।।\nगणपतिबाप्पा मोरया ।।"
+  }
 ]

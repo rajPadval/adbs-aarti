@@ -3,7 +3,7 @@
 <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
-        android:label="adbs_aarti"
+        android:label="ADBS Aarti"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
